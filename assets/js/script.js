@@ -37,3 +37,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+console.log("Script is connected!");
+
+const form = document.getElementById("contactForm");
+
+if (form) {
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form submitted!");
+    });
+}
